@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" type="text/css" href="myStyle.css">
+    
+    <script>
+        function changeInfo(buttonNum) {
+            var names = ["GilaValley","Gilbert","Mesa","Phoenix","Snowflake","Tucson","Fresno","LA","Newport","Oakland","Redlands","Sacramento","SanDiego","Denver","FortCollins","Kona","Laie","LasVegas","Reno","Albuquerque"];
+            
+            for (var i = 0; i < names.length; i++)
+            {
+                document.getElementById(names[i]).style.backgroundColor="black";
+            }
+            if(buttonNum == 1)
+            {
+                document.getElementById("changeablePic").src="https://photos.smugmug.com/Temples/Organized-by-Temple/Gila-Valley-LDS-Temple/i-wG4pjHx/0/bd4bf0d9/L/Gila%20Valley%20Temple%20Left%20Side_D8B0116-L.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 26 April 2008<br>Groundbreaking: 14 February 2009<br>Dedicated: 23 May 2010";
+                document.getElementById("GilaValley").style.backgroundColor="green";
+                 	
+            }
+            else if(buttonNum == 2)
+            {
+                document.getElementById("changeablePic").src="https://www.mormonnewsroom.org/media/orig/Gilbert_Temple_sunset5.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 26 April 2008<br>Groundbreaking: 13 November 2010<br>Dedicated: 2 March 2014";
+                document.getElementById("Gilbert").style.backgroundColor="green";
+            } 
+            else if(buttonNum == 3)
+            {
+                document.getElementById("changeablePic").src="http://arizonabeehive.com/wp-content/uploads/2017/10/MesaTemple6.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 3 October 1919<br>Groundbreaking: 25 April 1922<br>Dedicated: 23 October 1927";
+                document.getElementById("Mesa").style.backgroundColor="green";
+            }	
+            else if(buttonNum == 4)
+            {
+                document.getElementById("changeablePic").src="https://photos.smugmug.com/Temples/Organized-by-Temple/Phoenix-LDS-Temple/i-JvcHhfg/0/2aa55a41/L/Phoenix%20Temple%20Pastels_D8B7895-Pano-L.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 24 May 2008<br>Groundbreaking: 4 June 2011<br>Dedicated: 16 November 2014";
+                document.getElementById("Phoenix").style.backgroundColor="green";
+            }	 
+            else if(buttonNum == 5)
+            {
+                document.getElementById("changeablePic").src="https://www.ldstemple.pics/wp-content/uploads/snowflake-temple-sunset-and-waterfall.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 2 April 2000<br>Groundbreaking: 23 September 2000<br>Dedicated: 3 March 2002";
+                document.getElementById("Snowflake").style.backgroundColor="green";
+            }	 
+            else if(buttonNum == 6)
+            {
+                document.getElementById("changeablePic").src="https://bloximages.chicago2.vip.townnews.com/tucson.com/content/tncms/assets/v3/editorial/1/06/106344ee-48db-531b-9174-4e97fdc1585b/55c52c85dec9c.image.jpg?resize=1200%2C949";
+                document.getElementById("changeableInfo").innerHTML="Announced: 6 October 2012<br>Groundbreaking: 17 October 2015<br>Dedicated: 13 August 2017";
+                document.getElementById("Tucson").style.backgroundColor="green";
+            }	 
+            else if(buttonNum == 7)
+            {
+                document.getElementById("changeablePic").src="https://photos.smugmug.com/Temples/Organized-by-Temple/Fresno-LDS-Temple/i-nkg5jbP/0/03b410d3/L/Fresno%20Temple_D8B1716-L.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 8 January 1999<br>Groundbreaking: 20 March 1999<br>Dedicated: 9 April 2000";
+                document.getElementById("Fresno").style.backgroundColor="green";
+            }	 
+            else if(buttonNum == 8)
+            {
+                document.getElementById("changeablePic").src="https://www.ldstemple.pics/wp-content/uploads/los-angeles-temple-glorious-declarations.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 6 March 1937<br>Groundbreaking: 22 September 1951<br>Dedicated: 11 March 1956";
+                document.getElementById("LA").style.backgroundColor="green";
+            }	 
+            else if(buttonNum == 9)
+            {
+                document.getElementById("changeablePic").src="http://media.ldscdn.org/images/media-library/temples/newport-beach-california/newport-beach-temple-lds-758832-wallpaper.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 21 April 2001<br>Groundbreaking: 15 August 2003<br>Dedicated: 28 August 2005";
+                document.getElementById("Newport").style.backgroundColor="green";
+            }	 
+            else if(buttonNum == 10)
+            {
+                document.getElementById("changeablePic").src="https://media.ldscdn.org/images/media-library/temples/oakland-california/oakland-california-temple-fountain-dusk-922215-high-res-print.jpg?download=true";
+                document.getElementById("changeableInfo").innerHTML="Announced: 26 May 1962<br>Groundbreaking: 26 May 1962<br>Dedicated: 17 November 1964";
+                document.getElementById("Oakland").style.backgroundColor="green";
+            }	 
+            else if(buttonNum == 11)
+            {
+                document.getElementById("changeablePic").src="http://ldstemplephotography.net/smugCache/580402585_x5pvLM3-XL.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 21 April 2001<br>Groundbreaking: 1 December 2001<br>Dedicated: 14 September 2003";
+                document.getElementById("Redlands").style.backgroundColor="green";
+            }	 
+            else if(buttonNum == 12)
+            {
+                document.getElementById("changeablePic").src="http://www.maintour.com/nocal/sactemple01.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 21 April 2001<br>Groundbreaking: 22 August 2004<br>Dedicated: 3 September 2006";
+                document.getElementById("Sacramento").style.backgroundColor="green";
+            }	 
+            else if(buttonNum == 13)
+            {
+                document.getElementById("changeablePic").src="https://www.mormonnewsroom.org/media/960x540/San-Diego-California-Temple1.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 7 April 1984<br>Groundbreaking: 27 February 1988<br>Dedicated: 25 April 1993";
+                document.getElementById("SanDiego").style.backgroundColor="green";
+            }		
+            else if(buttonNum == 14)
+            {
+                document.getElementById("changeablePic").src="https://i.pinimg.com/originals/e6/56/d4/e656d45c615a5db64abddc60b231922c.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 31 March 1982<br>Groundbreaking: 19 May 1984<br>Dedicated: 24 October 1986";
+                document.getElementById("Denver").style.backgroundColor="green";
+            }	 
+            else if(buttonNum == 15)
+            {
+                document.getElementById("changeablePic").src="https://www.ldsdaily.com/wp-content/uploads/2016/06/fort-collins-mormon-temple-1465180283.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 2 April 2011<br>Groundbreaking: 24 August 2013<br>Dedicated: 16 October 2016";
+                document.getElementById("FortCollins").style.backgroundColor="green";
+            }		 
+            else if(buttonNum == 16)
+            {
+                document.getElementById("changeablePic").src="https://photos.smugmug.com/Temples/Organized-by-Temple/Kona-Hawaii-LDS-Temple/i-wPr7Qsz/0/b3b37012/L/Kona%20Temple%20Back_D8B3829-L.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 7 May 1998<br>Groundbreaking: 13 March 1999<br>Dedicated: 23 January 2000";
+                document.getElementById("Kona").style.backgroundColor="green";
+            }	
+            else if(buttonNum == 17)
+            {
+                document.getElementById("changeablePic").src="https://www.ldstemple.pics/wp-content/uploads/laie-hawaii-temple-gateway-to-paradise.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 1 October 1915<br>Groundbreaking: 1 June 1915<br>Dedicated: 27 November 1919";
+                document.getElementById("Laie").style.backgroundColor="green";
+            }	
+            else if(buttonNum == 18)
+            {
+                document.getElementById("changeablePic").src="https://www.lds.org/bc/content/church/temples/las-vegas-nevada/images/las-vegas-nevada-808x480-0001776.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 7 April 1984<br>Groundbreaking: 30 November 1985<br>Dedicated: 16 December 1989";
+                document.getElementById("LasVegas").style.backgroundColor="green";
+            }	
+            else if(buttonNum == 19)
+            {
+                document.getElementById("changeablePic").src="https://media.ldscdn.org/images/media-library/temples/reno-nevada/reno-temple-lds-1072790-high-res-print.jpg?download=true";
+                document.getElementById("changeableInfo").innerHTML="Announced: 12 April 1999<br>Groundbreaking: 24 July 1999<br>Dedicated: 23 April 2000";
+                document.getElementById("Reno").style.backgroundColor="green";
+            }	 
+            else
+            {
+                document.getElementById("changeablePic").src="https://photos.smugmug.com/Temples/Organized-by-Temple/Albuquerque-LDS-Temple/i-2bxPpQ5/0/69e0e411/L/Albuquerque%20Temple%20-%20Clear%20Skies%20and%20Fountain_D8B6856-Pano-L.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 4 April 1997<br>Groundbreaking: 20 June 1998<br>Dedicated: 5 March 2000";
+                document.getElementById("Albuquerque").style.backgroundColor="green";
+            }
+        }
+    </script>
+</head>
+<html>
+    <body>
+        <ul id="navBar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="africa.html">Africa</a></li>
+            <li><a href="asia.html">Asia</a></li>
+            <li><a href="canada.html">Canada</a></li>
+            <li><a href="centralamerica.html">Central America and the Caribbean</a></li>
+            <li><a href="central.html">Central United States</a></li>
+            <li><a href="eastern.html">Eastern United States</a></li>
+            <li><a href="europe.html">Europe</a></li>
+            <li><a href="mexico.html">Mexico</a></li>
+            <li><a href="northwestern.html">Northwestern United States</a></li>
+            <li><a href="oceania.html">Oceania</a></li>
+            <li><a href="southamerica.html">South America</a></li>
+            <li id="active"><a href="southwestern.html">Southwestern United States and Hawaii</a></li>
+            <li><a href="utah.html">Utah</a></li>
+        </ul>
+        
+        <img id="changeablePic"></img>
+        
+        <div id="buttonDiv">
+        <p id="changeableInfo"></p>
+        
+        <div id="buttonSection">
+        <button id="GilaValley" onclick="changeInfo(1)">Gila Valley Arizona Temple</button>
+        <button id="Gilbert" onclick="changeInfo(2)">Gilbert Arizona Temple</button>
+        <button id="Mesa" onclick="changeInfo(3)">Mesa Arizona Temple</button>
+        <button id="Phoenix" onclick="changeInfo(4)">Phoenix Arizona Temple</button>
+        <button id="Snowflake" onclick="changeInfo(5)">Snowflake Arizona Temple</button>
+        <button id="Tucson" onclick="changeInfo(6)">Tucson Arizona Temple</button>
+        <button id="Fresno" onclick="changeInfo(7)">Fresno California Temple</button>
+        <button id="LA" onclick="changeInfo(8)">Los Angeles California Temple</button>
+        <button id="Newport" onclick="changeInfo(9)">Newport Beach California Temple</button>
+        <button id="Oakland" onclick="changeInfo(10)">Oakland California Temple</button>
+        <button id="Redlands" onclick="changeInfo(11)">Redlands California Temple</button>
+        <button id="Sacramento" onclick="changeInfo(12)">Sacramento California Temple</button>
+        <button id="SanDiego" onclick="changeInfo(13)">San Diego California Temple</button>
+        <button id="Denver" onclick="changeInfo(14)">Denver Colorado Temple</button>
+        <button id="FortCollins" onclick="changeInfo(15)">Fort Collins Colorado Temple</button>
+        <button id="Kona" onclick="changeInfo(16)">Kona Hawaii Temple</button>
+        <button id="Laie" onclick="changeInfo(17)">Laie Hawaii Temple</button>
+        <button id="LasVegas" onclick="changeInfo(18)">Las Vegas Nevada Temple</button>
+        <button id="Reno" onclick="changeInfo(19)">Reno Nevada Temple</button>
+        <button id="Albuquerque" onclick="changeInfo(20)">Albuquerque New Mexico Temple</button>
+        </div>
+        </div>
+
+        <div id="linkdiv">
+        <h3 class="linklds">For more information, visit the following site:</h4>
+        <h4 class="linklds"><a href="https://www.lds.org/?lang=eng">Lds.org</a></h5>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" type="text/css" href="myStyle.css">
+    
+    <script>
+        function changeInfo(buttonNum) {
+            var names = ["Anchorage","Boise","IdahoFalls","Meridian","Pocatello","Rexburg","TwinFalls","Billings","Portland","Medford","Seattle","ColumbiaRiver","Spokane","StarValley"];
+            
+            for (var i = 0; i < names.length; i++)
+            {
+                document.getElementById(names[i]).style.backgroundColor="black";
+            }
+            if(buttonNum == 1)
+            {
+                document.getElementById("changeablePic").src="https://www.deseretnews.com/images/top/landmain/1357/1357.jpg?width=853&height=450";
+                document.getElementById("changeableInfo").innerHTML="Announced: 4 October 1997<br>Groundbreaking: 17 April 1998<br>Dedicated: 9 January 1999";
+                document.getElementById("Anchorage").style.backgroundColor="green";
+            }		
+            else if(buttonNum == 2)
+            {
+                document.getElementById("changeablePic").src="https://www.ldstemple.pics/wp-content/uploads/boise-temple-sunset-pano.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 31 March 1982<br>Groundbreaking: 18 December 1982<br>Dedicated: 25 May 1984";
+                document.getElementById("Boise").style.backgroundColor="green";
+            }	
+            else if(buttonNum == 3)
+            {
+                document.getElementById("changeablePic").src="http://www.ldssmile.com/wp-content/uploads/2017/05/18076624_10154816089797013_7432561033580501072_o.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 3 March 1937<br>Groundbreaking: 19 December 1939<br>Dedicated: 23 September 1945";
+                document.getElementById("IdahoFalls").style.backgroundColor="green";
+            }	 
+            else if(buttonNum == 4)
+            {
+                document.getElementById("changeablePic").src="https://www.ldstemple.pics/wp-content/uploads/meridian-temple-autumn-glow.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 2 April 2011<br>Groundbreaking: 23 August 2014<br>Dedicated: 19 November 2017";
+                document.getElementById("Meridian").style.backgroundColor="green";
+            }	 
+            else if(buttonNum == 5)
+            {
+                document.getElementById("changeablePic").src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiJikkKCYByA3fn54mNHHw7lC4eeBy4_dnh_kCVyROMJNTQblS";
+                document.getElementById("changeableInfo").innerHTML="Announced: 2 April 2017<br>Groundbreaking: TBD<br>Dedicated: TBD";
+                document.getElementById("Pocatello").style.backgroundColor="green";
+            }
+            else if(buttonNum == 6)
+            {
+                document.getElementById("changeablePic").src="http://www.jacobsenconstruction.com/wp-content/uploads/2015/02/Rexburg-Idaho-LDS-Temple_Banner-1_Images-for-Dev.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 20 December 2003<br>Groundbreaking: 30 July 2005<br>Dedicated: 10 February 2008";
+                document.getElementById("Rexburg").style.backgroundColor="green";
+            }	
+            else if(buttonNum == 7)
+            {
+                document.getElementById("changeablePic").src="http://ldstemplephotography.net/smugCache/2544858108_WkH2nJk-XL.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 2 October 2004<br>Groundbreaking: 15 April 2006<br>Dedicated: 24 August 2008";
+                document.getElementById("TwinFalls").style.backgroundColor="green";
+            }	
+            else if(buttonNum == 8)
+            {
+                document.getElementById("changeablePic").src="https://photos.smugmug.com/Temples/Organized-by-Temple/Billings-Montana-LDS-Temple/i-vwxH7ZZ/0/bd7b4d20/L/Billings%20Montana%20Temple%20Twilight_D8B0223-L.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 30 August 1996<br>Groundbreaking: 30 March 1998<br>Dedicated: 20 November 1999";
+                document.getElementById("Billings").style.backgroundColor="green";
+            }	 
+            else if(buttonNum == 9)
+            {
+                document.getElementById("changeablePic").src="https://media.ldscdn.org/images/media-library/temples/portland-oregon/portland-temple-lds-1079112-gallery.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 7 April 1984<br>Groundbreaking: 20 September 1986<br>Dedicated: 19 August 1989";
+                document.getElementById("Portland").style.backgroundColor="green";
+            }	 
+            else if(buttonNum == 10)
+            {
+                document.getElementById("changeablePic").src="http://media.ldscdn.org/images/media-library/temples/medford-oregon/medford-temple-lds-125813-wallpaper.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 15 March 1999<br>Groundbreaking: 20 May 1999<br>Dedicated: 16 April 2000";
+                document.getElementById("Medford").style.backgroundColor="green";
+            }	
+            else if(buttonNum == 11)
+            {
+                document.getElementById("changeablePic").src="https://photos.smugmug.com/Temples/Organized-by-Temple/Seattle-LDS-Temple/i-MjsXL46/0/f5a43309/L/Seattle%20Temple%20Sunset%20with%20Flowers_8D10184-L.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 27 May 1978<br>Groundbreaking: 27 May 1978<br>Dedicated: 17 November 1980";
+                document.getElementById("Seattle").style.backgroundColor="green";
+            }		
+            else if(buttonNum == 12)
+            {
+                document.getElementById("changeablePic").src="https://photos.smugmug.com/Temples/Organized-by-Temple/Columbia-River-LDS-Temple/i-wSqV7LG/0/e48a5f61/L/Columbia%20River%20Temple%20Sunrise%20%28Front%29%20_7364074-L.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 2 April 2000<br>Groundbreaking: 28 October 2000<br>Dedicated: 18 November 2001";
+                document.getElementById("ColumbiaRiver").style.backgroundColor="green";
+            }	
+            else if(buttonNum == 13)
+            {
+                document.getElementById("changeablePic").src="https://www.lds.org/bc/content/church/temples/spokane-washington/images/spokane-washington-808x480-CU100727_bkf01.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 13 August 1998<br>Groundbreaking: 10 October 1998<br>Dedicated: 21 August 1999";
+                document.getElementById("Spokane").style.backgroundColor="green";
+            }	
+            else
+            {
+                document.getElementById("changeablePic").src="https://www.ldstemple.pics/wp-content/uploads/star-valley-temple-fading-sunset.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 1 October 2011<br>Groundbreaking: 25 April 2015<br>Dedicated: 30 October 2016";
+                document.getElementById("StarValley").style.backgroundColor="green";
+            }	
+        }
+    </script>
+</head>
+<html>
+    <body>
+        <ul id="navBar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="africa.html">Africa</a></li>
+            <li><a href="asia.html">Asia</a></li>
+            <li><a href="canada.html">Canada</a></li>
+            <li><a href="centralamerica.html">Central America and the Caribbean</a></li>
+            <li><a href="central.html">Central United States</a></li>
+            <li><a href="eastern.html">Eastern United States</a></li>
+            <li><a href="europe.html">Europe</a></li>
+            <li><a href="mexico.html">Mexico</a></li>
+            <li id="active"><a href="northwestern.html">Northwestern United States</a></li>
+            <li><a href="oceania.html">Oceania</a></li>
+            <li><a href="southamerica.html">South America</a></li>
+            <li><a href="southwestern.html">Southwestern United States and Hawaii</a></li>
+            <li><a href="utah.html">Utah</a></li>
+        </ul>
+        
+        <img id="changeablePic"></img>
+        
+        <div id="buttonDiv">
+        <p id="changeableInfo"></p>
+        
+        <div id="buttonSection">
+        <button id="Anchorage" onclick="changeInfo(1)">Anchorage Alaska Temple</button>
+        <button id="Boise" onclick="changeInfo(2)">Boise Idaho Temple</button>
+        <button id="IdahoFalls" onclick="changeInfo(3)">Idaho Falls Idaho Temple</button>
+        <button id="Meridian" onclick="changeInfo(4)">Meridian Idaho Temple</button>
+        <button id="Pocatello" onclick="changeInfo(5)">Pocatello Idaho Temple</button>
+        <button id="Rexburg" onclick="changeInfo(6)">Rexburg Idaho Temple</button>
+        <button id="TwinFalls" onclick="changeInfo(7)">Twin Falls Idaho Temple</button>
+        <button id="Billings" onclick="changeInfo(8)">Billings Montana Temple</button>
+        <button id="Portland" onclick="changeInfo(9)">Portland Oregon Temple</button>
+        <button id="Medford" onclick="changeInfo(10)">Medford Oregon Temple</button>
+        <button id="Seattle" onclick="changeInfo(11)">Seattle Washington Temple</button>
+        <button id="ColumbiaRiver" onclick="changeInfo(12)">Columbia River Washington Temple</button>
+        <button id="Spokane" onclick="changeInfo(13)">Spokane Washington Temple</button>
+        <button id="StarValley" onclick="changeInfo(14)">Star Valley Wyoming Temple</button>
+        </div>
+        </div>
+        
+        <div id="linkdiv">
+        <h3 class="linklds">For more information, visit the following site:</h4>
+        <h4 class="linklds"><a href="https://www.lds.org/?lang=eng">Lds.org</a></h5>
+        </div>
+    </body>
+</html>

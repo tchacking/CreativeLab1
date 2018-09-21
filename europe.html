@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" type="text/css" href="myStyle.css">
+    
+    <script>
+        function changeInfo(buttonNum) {
+            var names = ["Denmark","Finland","France","Italy","Frankfurt","Freiberg","Netherlands","Portugal","Spain","Sweden","Switzerland","Ukraine","Preston","London"];
+            
+            for (var i = 0; i < names.length; i++)
+            {
+                document.getElementById(names[i]).style.backgroundColor="black";
+            }
+            if(buttonNum == 1)
+            {
+                document.getElementById("changeablePic").src="https://media.ldscdn.org/images/media-library/temples/copenhagen-denmark/copenhagen-denmark-temple-lds-278232-gallery.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 17 March 1999<br>Groundbreaking: 24 April 1999<br>Dedicated: 23 May 2004";
+                document.getElementById("Denmark").style.backgroundColor="green";
+                
+            }
+            else if(buttonNum == 2)
+            {
+                document.getElementById("changeablePic").src="https://images.fineartamerica.com/images-medium-large-5/helsinki-finland-temple-jenny-wood.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 2 April 2000<br>Groundbreaking: 29 March 2003<br>Dedicated: 22 October 2006";
+                document.getElementById("Finland").style.backgroundColor="green";
+            }
+            else if(buttonNum == 3)
+            {
+                document.getElementById("changeablePic").src="https://www.lds.org/bc/content/ldsorg/church/news/2017/04/10/580-Paris-Temple-Exterior1-2017-resized.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 15 July 2011<br>Groundbreaking: N/A<br>Dedicated: 21 May 2017";
+                document.getElementById("France").style.backgroundColor="green";
+            }
+            else if(buttonNum == 4)
+            {
+                document.getElementById("changeablePic").src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiJikkKCYByA3fn54mNHHw7lC4eeBy4_dnh_kCVyROMJNTQblS";
+                document.getElementById("changeableInfo").innerHTML="Announced: 4 October 2008<br>Groundbreaking: 23 October 2010<br>Dedicated: Announced: 10-17 March 2019";
+                document.getElementById("Italy").style.backgroundColor="green";
+            }
+            else if(buttonNum == 5)
+            {
+                document.getElementById("changeablePic").src="https://www.lds.org/bc/content/ldsorg/church/news/2015/08/22/580-frankfurtgermany-82734.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 1 April 1981<br>Groundbreaking: 1 July 1985<br>Dedicated: 28 August 1987";
+                document.getElementById("Frankfurt").style.backgroundColor="green";
+            }
+            else if(buttonNum == 6)
+            {
+                document.getElementById("changeablePic").src="http://media.ldscdn.org/images/media-library/temples/freiberg-germany/freiberg-germany-temple-lds-991383-wallpaper.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 9 October 1982<br>Groundbreaking: 23 April 1983<br>Dedicated: 29 June 1985";
+                document.getElementById("Freiberg").style.backgroundColor="green";
+            }
+            else if(buttonNum == 7)
+            {
+                document.getElementById("changeablePic").src="https://www.mormonnewsroom.org/media/orig/The-Hague-Netherlands-Temple2.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 16 August 1999<br>Groundbreaking: 26 August 2000<br>Dedicated: 8 September 2002";
+                document.getElementById("Netherlands").style.backgroundColor="green";
+            }
+            else if(buttonNum == 8)
+            {
+                document.getElementById("changeablePic").src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiJikkKCYByA3fn54mNHHw7lC4eeBy4_dnh_kCVyROMJNTQblS";
+                document.getElementById("changeableInfo").innerHTML="Announced: 2 October 2010<br>Groundbreaking: 5 December 2015<br>Dedicated: TBD";
+                document.getElementById("Portugal").style.backgroundColor="green";
+            }
+            else if(buttonNum == 9)
+            {
+                document.getElementById("changeablePic").src="http://media.ldscdn.org/images/media-library/temples/madrid-spain/madrid-spain-temple-954939-wallpaper.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 4 April 1993<br>Groundbreaking: 11 June 1996<br>Dedicated: 19 March 1999";
+                document.getElementById("Spain").style.backgroundColor="green";
+            }
+            else if(buttonNum == 10)
+            {
+                document.getElementById("changeablePic").src="http://media.ldscdn.org/images/media-library/temples/stockholm-sweden/stockholm-sweden-lds-temple-1029790-wallpaper.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 1 April 1981<br>Groundbreaking: 17 March 1984<br>Dedicated: 2 July 1985";
+                document.getElementById("Sweden").style.backgroundColor="green";
+            }
+             else if(buttonNum == 11)
+            {
+                document.getElementById("changeablePic").src="http://media.ldscdn.org/images/media-library/temples/bern-switzerland/bern-switzerland-temple-lds-784295-wallpaper.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 1 July 1952<br>Groundbreaking: 5 August 1953<br>Dedicated: 11 September 1955";
+                document.getElementById("Switzerland").style.backgroundColor="green";
+            }
+             else if(buttonNum == 12)
+            {
+                document.getElementById("changeablePic").src="http://thisweekinmormons.com/wp-content/uploads/2015/03/11-kyiv-ukraine-mormon-temple.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 20 July 1998<br>Groundbreaking: 23 June 2007<br>Dedicated: 29 August 2010";
+                document.getElementById("Ukraine").style.backgroundColor="green";
+            }
+             else if(buttonNum == 13)
+            {
+                document.getElementById("changeablePic").src="https://media.ldscdn.org/images/media-library/temples/preston-england/preston-temple-765114-gallery.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 19 October 1992<br>Groundbreaking: 12 June 1994<br>Dedicated: 7 June 1998";
+                document.getElementById("Preston").style.backgroundColor="green";
+            }
+            else
+            {
+                document.getElementById("changeablePic").src="https://www.mormonnewsroom.org/media/orig/London-England-Temple1a.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 17 February 1955<br>Groundbreaking: 27 August 1955<br>Dedicated: 7 September 1958";
+                document.getElementById("London").style.backgroundColor="green";
+            }
+        }
+    </script>
+</head>
+<html>
+    <body>
+        <ul id="navBar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="africa.html">Africa</a></li>
+            <li><a href="asia.html">Asia</a></li>
+            <li><a href="canada.html">Canada</a></li>
+            <li><a href="centralamerica.html">Central America and the Caribbean</a></li>
+            <li><a href="central.html">Central United States</a></li>
+            <li><a href="eastern.html">Eastern United States</a></li>
+            <li id="active"><a href="europe.html">Europe</a></li>
+            <li><a href="mexico.html">Mexico</a></li>
+            <li><a href="northwestern.html">Northwestern United States</a></li>
+            <li><a href="oceania.html">Oceania</a></li>
+            <li><a href="southamerica.html">South America</a></li>
+            <li><a href="southwestern.html">Southwestern United States and Hawaii</a></li>
+            <li><a href="utah.html">Utah</a></li>
+        </ul>
+        
+        <img id="changeablePic"></img>
+        
+        <div id="buttonDiv">
+        <p id="changeableInfo"></p>
+        
+        <div id="buttonSection">
+        <button id="Denmark" onclick="changeInfo(1)">Copenhagen Denmark Temple</button>
+        <button id="Finland" onclick="changeInfo(2)">Helsinki Finland Temple</button>
+        <button id="France" onclick="changeInfo(3)">Paris France Temple</button>
+        <button id="Italy" onclick="changeInfo(4)">Rome Italy Temple</button>
+        <button id="Frankfurt" onclick="changeInfo(5)">Frankfurt Germany Temple</button>
+        <button id="Freiberg" onclick="changeInfo(6)">Freiberg Germany Temple</button>
+        <button id="Netherlands" onclick="changeInfo(7)">The Hague Netherlands Temple</button>
+        <button id="Portugal" onclick="changeInfo(8)">Lisbon Portugal Temple</button>
+        <button id="Spain" onclick="changeInfo(9)">Madrid Spain Temple</button>
+        <button id="Sweden" onclick="changeInfo(10)">Stockholm Sweden Temple</button>
+        <button id="Switzerland" onclick="changeInfo(11)">Bern Switzerland Temple</button>
+        <button id="Ukraine" onclick="changeInfo(12)">Kyiv Ukraine Temple</button>
+        <button id="Preston" onclick="changeInfo(13)">Preston England Temple</button>
+        <button id="London" onclick="changeInfo(14)">London England Temple</button>
+        </div>
+        </div>
+        
+        <div id="linkdiv">
+        <h3 class="linklds">For more information, visit the following site:</h4>
+        <h4 class="linklds"><a href="https://www.lds.org/?lang=eng">Lds.org</a></h5>
+        </div>
+    </body>
+</html>

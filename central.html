@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" type="text/css" href="myStyle.css">
+    
+    <script>
+        function changeInfo(buttonNum) {
+            var names = ["Chicago","Nauvoo","Baton","StPaul","KansasCity","StLouis","Winter","Bismarck","OkCity","Dallas","Houston","Lubbock","SanAntonio"];
+            
+            for (var i = 0; i < names.length; i++)
+            {
+                document.getElementById(names[i]).style.backgroundColor="black";
+            }
+            if(buttonNum == 1)
+            {
+                document.getElementById("changeablePic").src="https://media.ldscdn.org/images/media-library/temples/chicago-illinois/chicago-temple-lds-885844-gallery.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 1 April 1981<br>Groundbreaking: 13 August 1983<br>Dedicated: 9 August 1985";
+                document.getElementById("Chicago").style.backgroundColor="green";
+                
+            }
+            else if(buttonNum == 2)
+            {
+                document.getElementById("changeablePic").src="http://media.ldscdn.org/images/media-library/temples/nauvoo-illinois/nauvoo-temple-756499-wallpaper.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 4 April 1999<br>Groundbreaking: 24 October 1999<br>Dedicated: 27 June 2002";
+                document.getElementById("Nauvoo").style.backgroundColor="green";
+            }
+            else if(buttonNum == 3)
+            {
+                document.getElementById("changeablePic").src="https://www.mormonnewsroom.org/media/orig/Baton_Rouge_Louisiana_Temple.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 14 October 1998<br>Groundbreaking: 8 May 1999<br>Dedicated: 16 July 2000";
+                document.getElementById("Baton").style.backgroundColor="green";
+            }
+            else if(buttonNum == 4)
+            {
+                document.getElementById("changeablePic").src="https://photos.smugmug.com/Temples/Organized-by-Temple/St-Paul-LDS-Temple/i-pmgHWbK/0/3b838660/L/St%20Paul%20Temple%20Rainy%20morning_D8B3771-L.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 29 July 1998<br>Groundbreaking: 26 September 1998<br>Dedicated: 9 January 2000";
+                document.getElementById("StPaul").style.backgroundColor="green";
+            }
+            else if(buttonNum == 5)
+            {
+                document.getElementById("changeablePic").src="https://photos.smugmug.com/Temples/Organized-by-Temple/Kansas-City-LDS-Temple/i-JBf64nD/0/9a2c7d5c/L/kansas%20City%20Temple%20-%20colorful%20morning_HDR8691-L.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 4 October 2008<br>Groundbreaking: 8 May 2010<br>Dedicated: 6 May 2012";
+                document.getElementById("KansasCity").style.backgroundColor="green";
+            }
+            else if(buttonNum == 6)
+            {
+                document.getElementById("changeablePic").src="https://www.ldstemple.pics/wp-content/uploads/st-louis-temple-now-the-day-is-over.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 29 December 1990<br>Groundbreaking: 30 October 1993<br>Dedicated: 1 June 1997";
+                document.getElementById("StLouis").style.backgroundColor="green";
+            }
+            else if(buttonNum == 7)
+            {
+                document.getElementById("changeablePic").src="https://photos.smugmug.com/Temples/Organized-by-Temple/Winter-Quarters-LDS-Temple/i-VJqr5dg/0/1c4d1c43/L/Winter%20Quarters%20Temple%20Day_8D11383-L.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 14 June 1999<br>Groundbreaking: 28 November 1999<br>Dedicated: 22 April 2001";
+                document.getElementById("Winter").style.backgroundColor="green";
+            }
+            else if(buttonNum == 8)
+            {
+                document.getElementById("changeablePic").src="https://www.lds.org/bc/content/church/temples/bismarck-north-dakota/images/bismarck-north-dakota-808x480-0002102.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 29 July 1998<br>Groundbreaking: 17 October 1998<br>Dedicated: 19 September 1999";
+                document.getElementById("Bismarck").style.backgroundColor="green";
+            }
+            else if(buttonNum == 9)
+            {
+                document.getElementById("changeablePic").src="https://www.mormonwiki.com/wiki/images/thumb/4/4e/Oklahoma-City-Oklahoma-Temple.jpg/300px-Oklahoma-City-Oklahoma-Temple.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 14 March 1999<br>Groundbreaking: 3 July 1999<br>Dedicated: 30 July 2000";
+                document.getElementById("OkCity").style.backgroundColor="green";
+            }
+            else if(buttonNum == 10)
+            {
+                document.getElementById("changeablePic").src="https://www.mormonnewsroom.org/media/960x540/Dallas-Texas-Temple1.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 1 April 1981<br>Groundbreaking: 25 August 1982<br>Dedicated: 25 September 1984";
+                document.getElementById("Dallas").style.backgroundColor="green";
+            }
+            else if(buttonNum == 11)
+            {
+                document.getElementById("changeablePic").src="https://photos.smugmug.com/Temples/Organized-by-Temple/Houston-LDS-Temple/i-rhRDcct/0/1d79433d/L/Houston%20LDS%20Temple%20at%20twilight_DSC1824-L.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 30 September 1997<br>Groundbreaking: 13 June 1998<br>Dedicated: 26 August 2000";
+                document.getElementById("Houston").style.backgroundColor="green";
+            }
+            else if(buttonNum == 12)
+            {
+                document.getElementById("changeablePic").src="https://www.ldstemple.pics/wp-content/uploads/lubbock-temple-sunset-aerial.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 2 April 2000<br>Groundbreaking: 4 November 2000<br>Dedicated: 21 April 2002";
+                document.getElementById("Lubbock").style.backgroundColor="green";
+            }
+            else
+            {
+                document.getElementById("changeablePic").src="https://www.mormonnewsroom.org/media/orig/San-Antonio-Texas-Temple1.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 24 June 2001<br>Groundbreaking: 29 March 2003<br>Dedicated: 22 May 2005";
+                document.getElementById("SanAntonio").style.backgroundColor="green";
+            }
+        }
+    </script>
+</head>
+<html>
+    <body>
+        <ul id="navBar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="africa.html">Africa</a></li>
+            <li><a href="asia.html">Asia</a></li>
+            <li><a href="canada.html">Canada</a></li>
+            <li><a href="centralamerica.html">Central America and the Caribbean</a></li>
+            <li id="active"><a href="central.html">Central United States</a></li>
+            <li><a href="eastern.html">Eastern United States</a></li>
+            <li><a href="europe.html">Europe</a></li>
+            <li><a href="mexico.html">Mexico</a></li>
+            <li><a href="northwestern.html">Northwestern United States</a></li>
+            <li><a href="oceania.html">Oceania</a></li>
+            <li><a href="southamerica.html">South America</a></li>
+            <li><a href="southwestern.html">Southwestern United States and Hawaii</a></li>
+            <li><a href="utah.html">Utah</a></li>
+        </ul>
+        
+        <img id="changeablePic"></img>
+        
+        <div id="buttonDiv">
+        <p id="changeableInfo"></p>
+        
+        <div id="buttonSection">
+        <button id="Chicago" onclick="changeInfo(1)">Chicago Illinois Temple</button>
+        <button id="Nauvoo" onclick="changeInfo(2)">Nauvoo Temple</button>
+        <button id="Baton" onclick="changeInfo(3)">Baton Rouge Louisiana Temple</button>
+        <button id="StPaul" onclick="changeInfo(4)">St. Paul Minnesota Temple</button>
+        <button id="KansasCity" onclick="changeInfo(5)">Kansas City Missouri Temple</button>
+        <button id="StLouis" onclick="changeInfo(6)">St. Louis Missouri Temple</button>
+        <button id="Winter" onclick="changeInfo(7)">Winter Quarters Nebraska Temple</button>
+        <button id="Bismarck" onclick="changeInfo(8)">Bismarck North Dakota Temple</button>
+        <button id="OkCity" onclick="changeInfo(9)">Oklahoma City Oklahoma Temple</button>
+        <button id="Dallas" onclick="changeInfo(10)">Dallas Texas Temple</button>
+        <button id="Houston" onclick="changeInfo(11)">Houston Texas Temple</button>
+        <button id="Lubbock" onclick="changeInfo(12)">Lubbock Texas Temple</button>
+        <button id="SanAntonio" onclick="changeInfo(13)">San Antonio Texas Temple</button>
+        </div>
+        </div>
+        
+        <div id="linkdiv">
+        <h3 class="linklds">For more information, visit the following site:</h4>
+        <h4 class="linklds"><a href="https://www.lds.org/?lang=eng">Lds.org</a></h5>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" type="text/css" href="myStyle.css">
+    
+    <script>
+        function changeInfo(buttonNum) {
+            var names = ["CostaRica","DR","ElSalvador","Guatemala","Quetz","Haiti","Honduras","Panama"];
+            
+            for (var i = 0; i < names.length; i++)
+            {
+                document.getElementById(names[i]).style.backgroundColor="black";
+            }
+            if(buttonNum == 1)
+            {
+                document.getElementById("changeablePic").src="https://i.pinimg.com/originals/66/50/53/665053c5f6a4b7e6cd7fd5533c2a21a5.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 17 March 1999<br>Groundbreaking: 24 April 1999<br>Dedicated: 4 June 2000";
+                document.getElementById("CostaRica").style.backgroundColor="green";
+                
+            }
+            else if(buttonNum == 2)
+            {
+                document.getElementById("changeablePic").src="https://i.pinimg.com/originals/94/8d/3e/948d3e820e5c22a2e62711006289d196.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 16 November 1993<br>Groundbreaking: 18 August 1996<br>Dedicated: 17 September 2000";
+                document.getElementById("DR").style.backgroundColor="green";
+            }
+            else if(buttonNum == 3)
+            {
+                document.getElementById("changeablePic").src="https://i.pinimg.com/originals/0b/c1/16/0bc116afb0a7c550ff403d50f29c7c97.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 7 November 2007<br>Groundbreaking: 20 September 2008<br>Dedicated: 21 August 2011";
+                document.getElementById("ElSalvador").style.backgroundColor="green";
+            }
+            else if(buttonNum == 4)
+            {
+                document.getElementById("changeablePic").src="https://delange.org/GtTemple/GuatTemple.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 1 April 1981<br>Groundbreaking: 12 September 1982<br>Dedicated: 14 December 1984";
+                document.getElementById("Guatemala").style.backgroundColor="green";
+            }
+            else if(buttonNum == 5)
+            {
+                document.getElementById("changeablePic").src="https://i.pinimg.com/originals/b9/87/c3/b987c3bd0b5968e75ea4b82cb48ebf51.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 17 December 2006<br>Groundbreaking: 14 March 2009<br>Dedicated: 11 December 2011";
+                document.getElementById("Quetz").style.backgroundColor="green";
+            }
+            else if(buttonNum == 6)
+            {
+                document.getElementById("changeablePic").src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiJikkKCYByA3fn54mNHHw7lC4eeBy4_dnh_kCVyROMJNTQblS";
+                document.getElementById("changeableInfo").innerHTML="Announced: 5 April 2015<br>Groundbreaking: 28 October 2017<br>Dedicated: TBD";
+                document.getElementById("Haiti").style.backgroundColor="green";
+            }
+            else if(buttonNum == 7)
+            {
+                document.getElementById("changeablePic").src="http://media.ldscdn.org/images/media-library/temples/tegucigalpa-honduras/tegucigalpa-honduras-temple-rendering-1063891-wallpaper.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 9 June 2006<br>Groundbreaking: 12 September 2009<br>Dedicated: 17 March 2013";
+                document.getElementById("Honduras").style.backgroundColor="green";
+            }
+            else
+            {
+                document.getElementById("changeablePic").src="https://media.ldscdn.org/images/media-library/temples/panama-city-panama/panama-city-temple-lds-569186-gallery.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 23 August 2002<br>Groundbreaking: 30 October 2005<br>Dedicated: 10 August 2008";
+                document.getElementById("Panama").style.backgroundColor="green";
+            }
+        }
+    </script>
+</head>
+<html>
+    <body>
+        <ul id="navBar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="africa.html">Africa</a></li>
+            <li><a href="asia.html">Asia</a></li>
+            <li><a href="canada.html">Canada</a></li>
+            <li id="active"><a href="centralamerica.html">Central America and the Caribbean</a></li>
+            <li><a href="central.html">Central United States</a></li>
+            <li><a href="eastern.html">Eastern United States</a></li>
+            <li><a href="europe.html">Europe</a></li>
+            <li><a href="mexico.html">Mexico</a></li>
+            <li><a href="northwestern.html">Northwestern United States</a></li>
+            <li><a href="oceania.html">Oceania</a></li>
+            <li><a href="southamerica.html">South America</a></li>
+            <li><a href="southwestern.html">Southwestern United States and Hawaii</a></li>
+            <li><a href="utah.html">Utah</a></li>
+        </ul>
+        
+        <img id="changeablePic"></img>
+        
+        <div id="buttonDiv">
+        <p id="changeableInfo"></p>
+        
+        <div id="buttonSection">
+        <button id="CostaRica" onclick="changeInfo(1)">San Jose Costa Rica Temple</button>
+        <button id="DR" onclick="changeInfo(2)">Santo Domingo Dominican Republic Temple</button>
+        <button id="ElSalvador" onclick="changeInfo(3)">San Salvador El Salvador Temple</button>
+        <button id="Guatemala" onclick="changeInfo(4)">Guatemala City Guatemala Temple</button>
+        <button id="Quetz" onclick="changeInfo(5)">Quetzaltenango Guatemala Temple</button>
+        <button id="Haiti" onclick="changeInfo(6)">Port-au-Prince Haiti Temple</button>
+        <button id="Honduras" onclick="changeInfo(7)">Tegucigalpa Honduras Temple</button>
+        <button id="Panama" onclick="changeInfo(8)">Panama City Panama Temple</button>
+        </div>
+        </div>
+        
+        <div id="linkdiv">
+        <h3 class="linklds">For more information, visit the following site:</h4>
+        <h4 class="linklds"><a href="https://www.lds.org/?lang=eng">Lds.org</a></h5>
+        </div>
+    </body>
+</html>

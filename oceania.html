@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" type="text/css" href="myStyle.css">
+    
+    <script>
+        function changeInfo(buttonNum) {
+            var names = ["Sydney","Brisbane","Adelaide","Melbourne","Perth","Suva","Papeete","Hamilton","Apia","Nuku"];
+            
+            for (var i = 0; i < names.length; i++)
+            {
+                document.getElementById(names[i]).style.backgroundColor="black";
+            }
+            if(buttonNum == 1)
+            {
+                document.getElementById("changeablePic").src="https://media.ldscdn.org/images/media-library/temples-gospel-art-book/sydney-australia-temple-lds-1025200-wallpaper.jpg?download=true";
+                document.getElementById("changeableInfo").innerHTML="Announced: 2 April 1980<br>Groundbreaking: 13 August 1982<br>Dedicated: 20 September 1984";
+                document.getElementById("Sydney").style.backgroundColor="green";
+                
+            }	 
+            else if(buttonNum == 2)
+            {
+                document.getElementById("changeablePic").src="http://media.ldscdn.org/images/media-library/temples/brisbane-australia/brisbane-australia-temple-lds-745088-wallpaper.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 20 July 1998<br>Groundbreaking: 26 May 2001<br>Dedicated: 15 June 2003";
+                document.getElementById("Brisbane").style.backgroundColor="green";
+            } 
+            else if(buttonNum == 3)
+            {
+                document.getElementById("changeablePic").src="https://media.ldscdn.org/images/media-library/temples/adelaide-australia/adelaide-australia-temple-lds-866420-high-res-print.jpg?download=true";
+                document.getElementById("changeableInfo").innerHTML="Announced: 17 March 1999<br>Groundbreaking: 29 May 1999<br>Dedicated: 15 June 2000";
+                document.getElementById("Adelaide").style.backgroundColor="green";
+            } 
+            else if(buttonNum == 4)
+            {
+                document.getElementById("changeablePic").src="https://media.ldscdn.org/images/media-library/temples/melbourne-australia/melbourne-australia-temple-lds-1025169-high-res-print.jpg?download=true";
+                document.getElementById("changeableInfo").innerHTML="Announced: 30 October 1998<br>Groundbreaking: 20 March 1999<br>Dedicated: 16 June 2000";
+                document.getElementById("Melbourne").style.backgroundColor="green";
+            } 
+            else if(buttonNum == 5)
+            {
+                document.getElementById("changeablePic").src="https://media.ldscdn.org/images/media-library/temples/perth-australia/perth-australia-temple-1562613-gallery.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 11 June 1999<br>Groundbreaking: 20 November 1999<br>Dedicated: 20 May 2001";
+                document.getElementById("Perth").style.backgroundColor="green";
+            }	 
+            else if(buttonNum == 6)
+            {
+                document.getElementById("changeablePic").src="https://www.mormonnewsroom.org.nz/media/960x540/Suva_Fiji_Temple-1.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 7 May 1998<br>Groundbreaking: 8 May 1999<br>Dedicated: 18 June 2000";
+                document.getElementById("Suva").style.backgroundColor="green";
+            } 
+            else if(buttonNum == 7)
+            {
+                document.getElementById("changeablePic").src="https://www.lds.org/bc/content/ldsorg/church/temples/papeete-tahiti/images/Papeete%20Tahiti%20Temple%20-%2001%20-%20808x480.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 2 April 1980<br>Groundbreaking: 13 February 1981<br>Dedicated: 27 October 1983";
+                document.getElementById("Papeete").style.backgroundColor="green";
+            }	
+            else if(buttonNum == 8)
+            {
+                document.getElementById("changeablePic").src="https://www.deseretnews.com/images/article/hires/700528345/700528345.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 17 February 1955<br>Groundbreaking: 21 December 1955<br>Dedicated: 20 April 1958";
+                document.getElementById("Hamilton").style.backgroundColor="green";
+            }	
+            else if(buttonNum == 9)
+            {
+                document.getElementById("changeablePic").src="https://media.ldscdn.org/images/media-library/temples/apia-samoa/apia-samoa-temple-lds-460475-high-res-print.jpg?download=true";
+                document.getElementById("changeableInfo").innerHTML="Announced: 16 July 2003<br>Groundbreaking: 19 October 2003<br>Dedicated: 5 August 1983";
+                document.getElementById("Apia").style.backgroundColor="green";
+            } 
+            else
+            {
+                document.getElementById("changeablePic").src="https://media.ldscdn.org/images/media-library/temples/nuku-alofa-tonga/nukualofa-tonga-temple-lds-435567-gallery.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 2 April 1980<br>Groundbreaking: 18 February 1981<br>Dedicated: 9 August 1983";
+                document.getElementById("Nuku").style.backgroundColor="green";
+            }	 
+        }
+    </script>
+</head>
+<html>
+    <body>
+        <ul id="navBar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="africa.html">Africa</a></li>
+            <li><a href="asia.html">Asia</a></li>
+            <li><a href="canada.html">Canada</a></li>
+            <li><a href="centralamerica.html">Central America and the Caribbean</a></li>
+            <li><a href="central.html">Central United States</a></li>
+            <li><a href="eastern.html">Eastern United States</a></li>
+            <li><a href="europe.html">Europe</a></li>
+            <li><a href="mexico.html">Mexico</a></li>
+            <li><a href="northwestern.html">Northwestern United States</a></li>
+            <li id="active"><a href="oceania.html">Oceania</a></li>
+            <li><a href="southamerica.html">South America</a></li>
+            <li><a href="southwestern.html">Southwestern United States and Hawaii</a></li>
+            <li><a href="utah.html">Utah</a></li>
+        </ul>
+        
+        <img id="changeablePic"></img>
+        
+        <div id="buttonDiv">
+        <p id="changeableInfo"></p>
+        
+        <div id="buttonSection">
+        <button id="Sydney" onclick="changeInfo(1)">Sydney Australia Temple</button>
+        <button id="Brisbane" onclick="changeInfo(2)">Brisbane Australia Temple</button>
+        <button id="Adelaide" onclick="changeInfo(3)">Adelaide Australia Temple</button>
+        <button id="Melbourne" onclick="changeInfo(4)">Melbourne Australia Temple</button>
+        <button id="Perth" onclick="changeInfo(5)">Perth Australia Temple</button>
+        <button id="Suva" onclick="changeInfo(6)">Suva Fiji Temple</button>
+        <button id="Papeete" onclick="changeInfo(7)">Papeete Tahiti Temple</button>
+        <button id="Hamilton" onclick="changeInfo(8)">Hamilton New Zealand Temple</button>
+        <button id="Apia" onclick="changeInfo(9)">Apia Samoa Temple</button>
+        <button id="Nuku" onclick="changeInfo(10)">Nuku'alofa Tonga Temple</button>
+        </div>
+        </div>
+        
+        <div id="linkdiv">
+        <h3 class="linklds">For more information, visit the following site:</h4>
+        <h4 class="linklds"><a href="https://www.lds.org/?lang=eng">Lds.org</a></h5>
+        </div>
+    </body>
+</html>

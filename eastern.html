@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" type="text/css" href="myStyle.css">
+    
+    <script>
+        function changeInfo(buttonNum) {
+            var names = ["Birmingham","Hartford","FortLauderdale","Orlando","Atlanta","Indianapolis","Louisville","DC","Boston","Detroit","Manhattan","Palmyra","Harrison","Raleigh","Columbus","Philadelphia","Columbia","Memphis","Nashville"];
+            
+            for (var i = 0; i < names.length; i++)
+            {
+                document.getElementById(names[i]).style.backgroundColor="black";
+            }
+            if(buttonNum == 1)
+            {
+                document.getElementById("changeablePic").src="https://www.mormonnewsroom.org/media/orig/Birmingham_Alabama_Temple2.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 11 September<br>Groundbreaking: 9 October 1999<br>Dedicated: 3 September 2000";
+                document.getElementById("Birmingham").style.backgroundColor="green";
+                
+            }
+            else if(buttonNum == 2)
+            {
+                document.getElementById("changeablePic").src="https://photos.ldschurchnews.com/file/064e463213/dnews/galleryImageLarge/the-fall-foliage-surrounds-the-hartford-connecticut-temple-during-the.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 2 October 2010<br>Groundbreaking: 17 August 2013<br>Dedicated: 20 November 2016";
+                document.getElementById("Hartford").style.backgroundColor="green";
+            }
+            else if(buttonNum == 3)
+            {
+                document.getElementById("changeablePic").src="https://www.mormonnewsroom.org/media/orig/Ft_Lauderdale_Temple1.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 3 October 2009<br>Groundbreaking: 18 June 2011<br>Dedicated: 4 May 2014";
+                document.getElementById("FortLauderdale").style.backgroundColor="green";
+            }
+            else if(buttonNum == 4)
+            {
+                document.getElementById("changeablePic").src="https://media.ldscdn.org/images/media-library/temples/orlando-florida/orlando-temple-lds-828935-gallery.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 6 April 1991<br>Groundbreaking: 20 June 1992<br>Dedicated: 9 October 1994";
+                document.getElementById("Orlando").style.backgroundColor="green";
+            }
+            else if(buttonNum == 5)
+            {
+                document.getElementById("changeablePic").src="https://history.lds.org/bc/content/images/prophets-of-the-restoration/gordon-b-hinckley/exhibit%20photos/atlanta-temple-1169283.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 2 April 1980<br>Groundbreaking: 7 March 1981<br>Dedicated: 1 June 1983";
+                document.getElementById("Atlanta").style.backgroundColor="green";
+            }
+            else if(buttonNum == 6)
+            {
+                document.getElementById("changeablePic").src="https://media.ldscdn.org/images/media-library/temples/indianapolis-indiana/independence-indiana-temple-1510459-wallpaper.jpg?download=true";
+                document.getElementById("changeableInfo").innerHTML="Announced: 2 October 2010<br>Groundbreaking: 29 September 2012<br>Dedicated: 23 August 2015";
+                document.getElementById("Indianapolis").style.backgroundColor="green";
+            }
+            else if(buttonNum == 7)
+            {
+                document.getElementById("changeablePic").src="https://photos.smugmug.com/Temples/Organized-by-Temple/Louisville-LDS-Temple/i-4fR2n2C/0/7762bb7b/L/Louisville%20Temple%20Sunset_D8B2531-L.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 17 March 1999<br>Groundbreaking: 29 May 1999<br>Dedicated: 19 March 2000";
+                document.getElementById("Louisville").style.backgroundColor="green";
+            }
+            else if(buttonNum == 8)
+            {
+                document.getElementById("changeablePic").src="https://www.lds.org/bc/content/ldsorg/locations/visitors-centers/washington-dc-temple-visitors-center/full/washingtondc-temple-christmas-dusk-1030917.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 15 November 1968<br>Groundbreaking: 7 December 1968<br>Dedicated: 19 November 1974";
+                document.getElementById("DC").style.backgroundColor="green";
+            }
+            else if(buttonNum == 9)
+            {
+                document.getElementById("changeablePic").src="https://www.ldstemple.pics/wp-content/uploads/boston-temple-summer-sunset.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 30 September 1995<br>Groundbreaking: 13 June 1997<br>Dedicated: 1 October 2000";
+                document.getElementById("Boston").style.backgroundColor="green";
+            }
+            else if(buttonNum == 10)
+            {
+                document.getElementById("changeablePic").src="https://photos.smugmug.com/Temples/Organized-by-Temple/Detroit-LDS-Temple/i-5kMcpNN/0/2a083951/L/Detroit%20Temple%20Sunset%20side_D8B5963-L.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 10 August 1998<br>Groundbreaking: 10 October 1998<br>Dedicated: 23 October 1999";
+                document.getElementById("Detroit").style.backgroundColor="green";
+            }
+            else if(buttonNum == 11)
+            {
+                document.getElementById("changeablePic").src="https://media.ldscdn.org/images/media-library/temples/manhattan-new-york/manhattan-temple-lds-248728-gallery.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 7 August 2002<br>Groundbreaking: 23 September 2002<br>Dedicated: 13 June 2004";
+                document.getElementById("Manhattan").style.backgroundColor="green";
+            }
+            else if(buttonNum == 12)
+            {
+                document.getElementById("changeablePic").src="https://photos.smugmug.com/Temples/Organized-by-Temple/Palmyra-LDS-Temple/i-PM8Jzc4/0/2bf4c527/L/Palmyra%20Temple%20Entrance%20from%20high_8D15007-L.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 21 February 1999<br>Groundbreaking: 25 May 1999<br>Dedicated: 6 April 2000";
+                document.getElementById("Palmyra").style.backgroundColor="green";
+            }
+            else if(buttonNum == 13)
+            {
+                document.getElementById("changeablePic").src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiJikkKCYByA3fn54mNHHw7lC4eeBy4_dnh_kCVyROMJNTQblS";
+                document.getElementById("changeableInfo").innerHTML="Announced: 30 September 1995<br>Groundbreaking: TBD<br>Dedicated: TBD";
+                document.getElementById("Harrison").style.backgroundColor="green";
+            }
+            else if(buttonNum == 14)
+            {
+                document.getElementById("changeablePic").src="https://www.mormonnewsroom.org/media/960x540/Raleigh-North-Carolina-Temple1.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 3 September 1998<br>Groundbreaking: 6 February 1999<br>Dedicated: 18 December 1999";
+                document.getElementById("Raleigh").style.backgroundColor="green";
+            }
+            else if(buttonNum == 15)
+            {
+                document.getElementById("changeablePic").src="https://photos.smugmug.com/Temples/Organized-by-Temple/Columbus-Ohio-LDS-Temple/i-44nG6rR/0/0ccd8e84/L/Columbus%20Ohio%20LDS%20Temple_7K01796-L.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 25 April 1998<br>Groundbreaking: 12 September 1998<br>Dedicated: 4 September 1999";
+                document.getElementById("Columbus").style.backgroundColor="green";
+            }
+            else if(buttonNum == 16)
+            {
+                document.getElementById("changeablePic").src="https://www.ldstemple.pics/wp-content/uploads/philadelphia-temple-distant-sunset.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 4 October 2008<br>Groundbreaking: 17 September 2011<br>Dedicated: 18 September 2016";
+                document.getElementById("Philadelphia").style.backgroundColor="green";
+            }
+            else if(buttonNum == 17)
+            {
+                document.getElementById("changeablePic").src="https://www.lds.org/bc/content/church/temples/columbia-south-carolina/images/columbia-south-carolina-808x480-CWD_091710_MJennings.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 11 September 1998<br>Groundbreaking: 5 December 1998<br>Dedicated: 16 October 1999";
+                document.getElementById("Columbia").style.backgroundColor="green";
+            }
+            else if(buttonNum == 18)
+            {
+                document.getElementById("changeablePic").src="https://media.ldscdn.org/images/media-library/temples/memphis-tennessee/memphis-temple-lds-83514-gallery.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 17 September 1998<br>Groundbreaking: 16 January 1999<br>Dedicated: 23 April 2000";
+                document.getElementById("Memphis").style.backgroundColor="green";
+            }
+            else
+            {
+                document.getElementById("changeablePic").src="https://photos.smugmug.com/Temples/Organized-by-Temple/Nashville-LDS-Temple/i-ChPTBSj/0/3915daf2/L/Nashville%20Temple%20Twilight_8D15204-L.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 9 November 1994<br>Groundbreaking: 13 March 1999<br>Dedicated: 21 May 2000";
+                document.getElementById("Nashville").style.backgroundColor="green";
+            }
+        }
+    </script>
+</head>
+<html>
+    <body>
+        <ul id="navBar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="africa.html">Africa</a></li>
+            <li><a href="asia.html">Asia</a></li>
+            <li><a href="canada.html">Canada</a></li>
+            <li><a href="centralamerica.html">Central America and the Caribbean</a></li>
+            <li><a href="central.html">Central United States</a></li>
+            <li id="active"><a href="eastern.html">Eastern United States</a></li>
+            <li><a href="europe.html">Europe</a></li>
+            <li><a href="mexico.html">Mexico</a></li>
+            <li><a href="northwestern.html">Northwestern United States</a></li>
+            <li><a href="oceania.html">Oceania</a></li>
+            <li><a href="southamerica.html">South America</a></li>
+            <li><a href="southwestern.html">Southwestern United States and Hawaii</a></li>
+            <li><a href="utah.html">Utah</a></li>
+        </ul>
+        
+        <img id="changeablePic"></img>
+        
+        <div id="buttonDiv">
+        <p id="changeableInfo"></p>
+        
+        <div id="buttonSection">
+        <button id="Birmingham" onclick="changeInfo(1)">Birmingham Alabama Temple</button>
+        <button id="Hartford" onclick="changeInfo(2)">Hartford Connecticut Temple</button>
+        <button id="FortLauderdale" onclick="changeInfo(3)">Fort Lauderdale Florida Temple</button>
+        <button id="Orlando" onclick="changeInfo(4)">Orlando Florida Temple</button>
+        <button id="Atlanta" onclick="changeInfo(5)">Atlanta Georgia Temple</button>
+        <button id="Indianapolis" onclick="changeInfo(6)">Indianapolis Indiana Temple</button>
+        <button id="Louisville" onclick="changeInfo(7)">Louisville Kentucky Temple</button>
+        <button id="DC" onclick="changeInfo(8)">Washington D.C. Temple</button>
+        <button id="Boston" onclick="changeInfo(9)">Boston Massachusetts Temple</button>
+        <button id="Detroit" onclick="changeInfo(10)">Detroit Michigan Temple</button>
+        <button id="Manhattan" onclick="changeInfo(11)">Manhattan New York Temple</button>
+        <button id="Palmyra" onclick="changeInfo(12)">Palmyra New York Temple</button>
+        <button id="Harrison" onclick="changeInfo(13)">Harrison New York Temple</button>
+        <button id="Raleigh" onclick="changeInfo(14)">Raleigh North Carolina Temple</button>
+        <button id="Columbus" onclick="changeInfo(15)">Columbus Ohio Temple</button>
+        <button id="Philadelphia" onclick="changeInfo(16)">Philadelphia Pennsylvania Temple</button>
+        <button id="Columbia" onclick="changeInfo(17)">Columbia South Carolina Temple</button>
+        <button id="Memphis" onclick="changeInfo(18)">Memphis Tennessee Temple</button>
+        <button id="Nashville" onclick="changeInfo(19)">Nashville Tennessee Temple</button>
+        </div>
+        </div>
+        
+        <div id="linkdiv">
+        <h3 class="linklds">For more information, visit the following site:</h4>
+        <h4 class="linklds"><a href="https://www.lds.org/?lang=eng">Lds.org</a></h5>
+        </div>
+    </body>
+</html>

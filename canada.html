@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" type="text/css" href="myStyle.css">
+    
+    <script>
+        function changeInfo(buttonNum) {
+            var names = ["Calgary","Cardston","Edmonton","Vancouver","Winnipeg","Halifax","Toronto","Montreal","Regina"];
+            
+            for (var i = 0; i < names.length; i++)
+            {
+                document.getElementById(names[i]).style.backgroundColor="black";
+            }
+            if(buttonNum == 1)
+            {
+                document.getElementById("changeablePic").src="https://content.ldschurch.org/bc/content/Temples/photo-galleries/calgary-alberta/1280x800/calgary-alberta-temple-before-open-house-1033408-wallpaper.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 4 October 2008<br>Groundbreaking: 15 May 2010<br>Dedicated: 28 October 2012";
+                document.getElementById("Calgary").style.backgroundColor="green";
+                
+            }
+            else if(buttonNum == 2)
+            {
+                document.getElementById("changeablePic").src="https://content.ldschurch.org/bc/content/Temples/photo-galleries/cardston-alberta/1280x800/cardston-alberta-temple-lds-782043-wallpaper.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 27 June 1913<br>Groundbreaking: 13 November 1913<br>Dedicated:26 August 1923";
+                document.getElementById("Cardston").style.backgroundColor="green";
+            }
+            else if(buttonNum == 3)
+            {
+                document.getElementById("changeablePic").src="https://content.ldschurch.org/bc/content/Temples/photo-galleries/edmonton-alberta/1280x800/edmonton-alberta-temple-lds-83329-wallpaper.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 11 August 1998<br>Groundbreaking: 27 February 1999<br>Dedicated: 11 December 1999";
+                document.getElementById("Edmonton").style.backgroundColor="green";
+            }
+            else if(buttonNum == 4)
+            {
+                document.getElementById("changeablePic").src="https://content.ldschurch.org/bc/content/Temples/photo-galleries/vancouver-british-columbia/1280x800/vancouver-temple-766984-wallpaper.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 25 May 2006<br>Groundbreaking: 4 August 2007<br>Dedicated: 2 May 2010";
+                document.getElementById("Vancouver").style.backgroundColor="green";
+            }
+            else if(buttonNum == 5)
+            {
+                document.getElementById("changeablePic").src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiJikkKCYByA3fn54mNHHw7lC4eeBy4_dnh_kCVyROMJNTQblS";
+                document.getElementById("changeableInfo").innerHTML="Announced: 2 April 2011<br>Groundbreaking: 3 December 2016<br>Dedicated: TBD";
+                document.getElementById("Winnipeg").style.backgroundColor="green";
+            }
+            else if(buttonNum == 6)
+            {
+                document.getElementById("changeablePic").src="https://content.ldschurch.org/bc/content/Temples/photo-galleries/halifax-nova-scotia/1280x800/halifax-nova-scotia-lds-temple-942187-wallpaper.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 7 May 1998<br>Groundbreaking: 12 October 1998<br>Dedicated: 14 November 1999";
+                document.getElementById("Halifax").style.backgroundColor="green";
+            }
+            else if(buttonNum == 7)
+            {
+                document.getElementById("changeablePic").src="https://content.ldschurch.org/bc/content/Temples/photo-galleries/toronto-ontario/1280x800/toronto-temple-lds-235671-wallpaper.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 7 April 1984<br>Groundbreaking: 10 October 1987<br>Dedicated: 25 August 1990";
+                document.getElementById("Toronto").style.backgroundColor="green";
+            }
+            else if(buttonNum == 8)
+            {
+                document.getElementById("changeablePic").src="https://media.ldscdn.org/images/media-library/temples/montreal-quebec/montreal-quebec-temple-lighted-1169263-gallery.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 6 August 1998<br>Groundbreaking: 9 April 1999<br>Dedicated: 4 June 2000";
+                document.getElementById("Montreal").style.backgroundColor="green";
+            }
+            else
+            {
+                document.getElementById("changeablePic").src="https://content.ldschurch.org/bc/content/Temples/photo-galleries/regina-saskatchewan/1280x800/regina-saskatchewan-temple-lds-1027275-wallpaper.jpg";
+                document.getElementById("changeableInfo").innerHTML="Announced: 3 August 1998<br>Groundbreaking: 14 November 1998<br>Dedicated: 14 November 1999";
+                document.getElementById("Regina").style.backgroundColor="green";
+            }
+        }
+    </script>
+</head>
+<html>
+    <body>
+        <ul id="navBar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="africa.html">Africa</a></li>
+            <li><a href="asia.html">Asia</a></li>
+            <li id="active"><a href="canada.html">Canada</a></li>
+            <li><a href="centralamerica.html">Central America and the Caribbean</a></li>
+            <li><a href="central.html">Central United States</a></li>
+            <li><a href="eastern.html">Eastern United States</a></li>
+            <li><a href="europe.html">Europe</a></li>
+            <li><a href="mexico.html">Mexico</a></li>
+            <li><a href="northwestern.html">Northwestern United States</a></li>
+            <li><a href="oceania.html">Oceania</a></li>
+            <li><a href="southamerica.html">South America</a></li>
+            <li><a href="southwestern.html">Southwestern United States and Hawaii</a></li>
+            <li><a href="utah.html">Utah</a></li>
+        </ul>
+        
+        <img id="changeablePic"></img>
+        
+        <div id="buttonDiv">
+        <p id="changeableInfo"></p>
+        
+        <div id="buttonSection">
+        <button id="Calgary" onclick="changeInfo(1)">Calgary Alberta Temple</button>
+        <button id="Cardston" onclick="changeInfo(2)">Cardston Alberta Temple</button>
+        <button id="Edmonton" onclick="changeInfo(3)">Edmonton Alberta Temple</button>
+        <button id="Vancouver" onclick="changeInfo(4)">Vancouver British Columbia Temple</button>
+        <button id="Winnipeg" onclick="changeInfo(5)">Winnipeg Manitoba Temple</button>
+        <button id="Halifax" onclick="changeInfo(6)">Halifax Nova Scotia Temple</button>
+        <button id="Toronto" onclick="changeInfo(7)">Toronto Ontario Temple</button>
+        <button id="Montreal" onclick="changeInfo(8)">Montreal Quebec Temple</button>
+        <button id="Regina" onclick="changeInfo(9)">Regina Saskatchewan Temple</button>
+        </div>
+        </div>
+        
+        <div id="linkdiv">
+        <h3 class="linklds">For more information, visit the following site:</h4>
+        <h4 class="linklds"><a href="https://www.lds.org/?lang=eng">Lds.org</a></h5>
+        </div>
+    </body>
+</html>
